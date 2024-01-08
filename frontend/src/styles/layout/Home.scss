@@ -26,23 +26,14 @@
 
   &__section-link {
     cursor: pointer;
-    text-shadow: 0 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 4px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: min-content;
-    &::after {
-      content: "";
-      width: 0;
-      height: 1px;
-      background-color: white;
-      transition: width 0.2s;
-    }
 
     &:hover {
-      &::after {
-        width: 100%;
-      }
+      color: #00d1ff;
     }
   }
 
