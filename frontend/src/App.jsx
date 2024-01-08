@@ -1,10 +1,14 @@
 import "./styles/main.scss";
 import CloudsBG from "./assets/cloudsbg.png";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div style={{ backgroundImage: `url(${CloudsBG})` }} className="App">
-      <h1>Initial React Setup</h1>
+      <Routes>
+        <Route index element={<Home />} />
+      </Routes>
     </div>
   );
 }
